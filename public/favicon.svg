@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="capsuleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="50%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#0f172a"/>
+  
+  <!-- Outer Bio Ring -->
+  <circle cx="256" cy="256" r="170" fill="none" stroke="#1e293b" stroke-width="16" />
+  
+  <!-- Angled Medicine Capsule -->
+  <g transform="rotate(-45 256 256)" filter="url(#glow)">
+    <!-- Top Capsule Half (Rose) -->
+    <path d="M 216 130 C 216 95, 296 95, 296 130 L 296 250 L 216 250 Z" fill="#f43f5e" />
+    <!-- Bottom Capsule Half (Emerald) -->
+    <path d="M 216 262 L 296 262 L 296 382 C 296 417, 216 417, 216 382 Z" fill="#10b981" />
+    <!-- Center Dividing Band -->
+    <rect x="210" y="250" width="92" height="12" rx="3" fill="#ffffff" fill-opacity="0.9"/>
+    <!-- Capsule Gloss Shine -->
+    <path d="M 230 140 L 240 140 L 240 370 L 230 370 Z" fill="#ffffff" fill-opacity="0.25" rx="4"/>
+  </g>
+  
+  <!-- DNA Molecule Orbit Dots -->
+  <circle cx="150" cy="170" r="14" fill="#38bdf8" />
+  <circle cx="362" cy="342" r="14" fill="#a855f7" />
+  <circle cx="342" cy="150" r="10" fill="#34d399" />
+  <circle cx="170" cy="362" r="10" fill="#fb7185" />
+</svg>

@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/components/layout/footer.tsx","./src/components/layout/header.tsx","./src/components/sector/pharmasectorhero.tsx","./src/components/sector/pharmasectorworkspace.tsx","./src/components/sector/tradingviewpharmacomparison.tsx","./src/data/pharmadata.ts","./src/lib/theme.ts","./src/types/pharma.ts"],"version":"5.7.3"}
