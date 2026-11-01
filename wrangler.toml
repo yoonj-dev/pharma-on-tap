@@ -1,5 +1,6 @@
 name = "pharma-on-tap"
 compatibility_date = "2024-09-23"
+routes = [{ pattern = "pharma.on-tap.xyz", custom_domain = true }]
 
 [assets]
 directory = "./dist"
